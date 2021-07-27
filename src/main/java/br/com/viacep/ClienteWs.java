@@ -49,7 +49,7 @@ public class ClienteWs {
                     .setBairro(jsonObject.getString("bairro"))
                     .setLocalidade(jsonObject.getString("localidade"))
                     .setUf(jsonObject.getString("uf"))
-                    .setUnidade(jsonObject.getString("unidade"))
+                    .setUnidade(jsonObject.containsKey("unidade") ? jsonObject.getString("unidade") : null)
                     .setIbge(jsonObject.getString("ibge"))
                     .setGia(jsonObject.getString("gia"));
 

@@ -1,0 +1,22 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+
+group = 'com.github.uliss3s'
+version = '1.0.1'
+
+description = """"""
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+
+
+repositories {
+        
+     maven { url "http://repo.maven.apache.org/maven2" }
+}
+dependencies {
+    compile group: 'org.apache.httpcomponents', name: 'httpclient', version:'4.3.6'
+    compile group: 'org.glassfish', name: 'javax.json', version:'1.0.4'
+    compile group: 'com.sun.xml.ws', name: 'jaxws-ri', version:'2.3.2'
+}
