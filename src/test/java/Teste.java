@@ -1,5 +1,8 @@
 import java.io.IOException;
 
+/**
+ * Teste manual (legado)
+ */
 public class Teste {
     public static void main(String[] args) throws IOException {
         System.out.println(br.com.correios.ClienteWs.getEnderecoPorCep("70002900"));
